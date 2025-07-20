@@ -61,7 +61,7 @@ az webapp create \
 az staticwebapp create \
   --name nanopure-frontend \
   --resource-group nanopure-rg \
-  --source https://github.com/yourusername/nanopure-app \
+  --source https://github.com/balirwaalvin/NanoPure \
   --location "East US 2" \
   --branch main \
   --app-location "nanopure-frontend" \

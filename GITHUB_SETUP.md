@@ -28,8 +28,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
 # Add the GitHub repository as remote origin
-# Replace 'yourusername' with your actual GitHub username
-git remote add origin https://github.com/yourusername/nanopure-app.git
+git remote add origin https://github.com/balirwaalvin/NanoPure.git
 
 # Rename the default branch to 'main' (GitHub standard)
 git branch -M main

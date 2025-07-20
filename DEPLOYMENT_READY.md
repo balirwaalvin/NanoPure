@@ -40,8 +40,7 @@ Your NanoPure Uganda Water Purification System is now fully prepared for deploym
 1. **Create GitHub repository** following [GITHUB_SETUP.md](./GITHUB_SETUP.md)
 2. **Push your code** to GitHub:
    ```powershell
-   # Replace 'yourusername' with your GitHub username
-   git remote add origin https://github.com/yourusername/nanopure-app.git
+   git remote add origin https://github.com/balirwaalvin/NanoPure.git
    git branch -M main
    git push -u origin main
    ```

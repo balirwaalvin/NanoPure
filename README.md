@@ -60,8 +60,8 @@ nanopure-app/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/nanopure-app.git
-   cd nanopure-app
+   git clone https://github.com/balirwaalvin/NanoPure.git
+   cd NanoPure
    ```
 
 2. **Install dependencies**
