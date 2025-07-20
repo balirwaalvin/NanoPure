@@ -1,0 +1,754 @@
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Styles - Enhanced */
+body.dark-mode, .dark-mode {
+  background: #181f2a !important;
+  color: #e2e8f0 !important;
+}
+
+/* Dark mode for all main containers */
+body.dark-mode .dashboard,
+.dark-mode .dashboard,
+body.dark-mode .settings,
+.dark-mode .settings,
+body.dark-mode .about,
+.dark-mode .about,
+body.dark-mode .home,
+.dark-mode .home,
+body.dark-mode .login,
+.dark-mode .login,
+body.dark-mode .register,
+.dark-mode .register {
+  background: #232b3b !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 4px 32px #0006 !important;
+}
+
+/* Dark mode for sections and cards */
+body.dark-mode .section,
+.dark-mode .section,
+body.dark-mode .introSection,
+.dark-mode .introSection,
+body.dark-mode .whySection,
+.dark-mode .whySection,
+body.dark-mode .visionSection,
+.dark-mode .visionSection,
+body.dark-mode .howSection,
+.dark-mode .howSection,
+body.dark-mode .teamSection,
+.dark-mode .teamSection,
+body.dark-mode .differentSection,
+.dark-mode .differentSection,
+body.dark-mode .ctaSection,
+.dark-mode .ctaSection,
+body.dark-mode .sensorCard,
+.dark-mode .sensorCard,
+body.dark-mode .chartCard,
+.dark-mode .chartCard,
+body.dark-mode .thresholdsCard,
+.dark-mode .thresholdsCard,
+body.dark-mode .statusPanel,
+.dark-mode .statusPanel,
+body.dark-mode .alertCenter,
+.dark-mode .alertCenter,
+body.dark-mode .mapCard,
+.dark-mode .mapCard,
+body.dark-mode .advancedPanel,
+.dark-mode .advancedPanel,
+body.dark-mode .liveGraphCard,
+.dark-mode .liveGraphCard {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 4px 32px #0006 !important;
+}
+
+/* Dark mode for form elements */
+body.dark-mode input,
+.dark-mode input,
+body.dark-mode select,
+.dark-mode select,
+body.dark-mode textarea,
+.dark-mode textarea {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  border-color: #63B3ED !important;
+}
+
+body.dark-mode input:focus,
+.dark-mode input:focus,
+body.dark-mode select:focus,
+.dark-mode select:focus,
+body.dark-mode textarea:focus,
+.dark-mode textarea:focus {
+  border-color: #2F855A !important;
+  box-shadow: 0 0 0 2px #2F855A33 !important;
+}
+
+/* Dark mode for navbar */
+body.dark-mode .navbar,
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #1A365D 0%, #2F855A 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 16px #0006 !important;
+}
+
+/* Dark mode for buttons */
+body.dark-mode .btn,
+.dark-mode .btn,
+body.dark-mode .controlBtn,
+.dark-mode .controlBtn,
+body.dark-mode .quickBtn,
+.dark-mode .quickBtn {
+  background: #2F855A !important;
+  color: #fff !important;
+  border-color: #2F855A !important;
+}
+
+body.dark-mode .btn:hover,
+.dark-mode .btn:hover,
+body.dark-mode .controlBtn:hover,
+.dark-mode .controlBtn:hover,
+body.dark-mode .quickBtn:hover,
+.dark-mode .quickBtn:hover {
+  background: #1A365D !important;
+  color: #fff !important;
+}
+
+body.dark-mode .removeBtn,
+.dark-mode .removeBtn {
+  background: #e53e3e !important;
+  color: #fff !important;
+}
+
+body.dark-mode .removeBtn:hover,
+.dark-mode .removeBtn:hover {
+  background: #b91c1c !important;
+}
+
+/* Dark mode for profile and dropdown */
+body.dark-mode .profileBtn,
+.dark-mode .profileBtn {
+  background: #2d3748 !important;
+  color: #FFD600 !important;
+  border-color: #63B3ED !important;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.dark-mode .profileBtn:hover,
+.dark-mode .profileBtn:hover {
+  background: #374151 !important;
+  color: #FFD600 !important;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3) !important;
+  transform: scale(1.05) !important;
+}
+
+body.dark-mode .dropdown,
+.dark-mode .dropdown {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 4px 16px #0006 !important;
+}
+
+body.dark-mode .dropdownLink,
+.dark-mode .dropdownLink {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .dropdownLink:hover,
+.dark-mode .dropdownLink:hover {
+  background: #2F855A !important;
+  color: #FFD600 !important;
+}
+
+/* Dark mode for sensor items and team members */
+body.dark-mode .sensorItem,
+.dark-mode .sensorItem,
+body.dark-mode .teamMember,
+.dark-mode .teamMember {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  border-color: #63B3ED !important;
+}
+
+/* Dark mode for text elements */
+body.dark-mode .title,
+.dark-mode .title,
+body.dark-mode .sectionTitle,
+.dark-mode .sectionTitle,
+body.dark-mode .chartTitle,
+.dark-mode .chartTitle {
+  color: #63B3ED !important;
+}
+
+body.dark-mode .sensorLabel,
+.dark-mode .sensorLabel,
+body.dark-mode .sensorUnit,
+.dark-mode .sensorUnit,
+body.dark-mode .sensorStatus,
+.dark-mode .sensorStatus {
+  color: #e2e8f0 !important;
+}
+
+body.dark-mode .sensorValue,
+.dark-mode .sensorValue {
+  color: #2F855A !important;
+}
+
+/* Dark mode for links */
+body.dark-mode .linkBtn,
+.dark-mode .linkBtn {
+  color: #63B3ED !important;
+}
+
+body.dark-mode .linkBtn:hover,
+.dark-mode .linkBtn:hover {
+  color: #2F855A !important;
+}
+
+/* Dark mode for radio labels */
+body.dark-mode .radioLabel,
+.dark-mode .radioLabel {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  border-color: #63B3ED !important;
+}
+
+body.dark-mode .radioLabel:hover,
+.dark-mode .radioLabel:hover {
+  background: #374151 !important;
+}
+
+/* Dark mode for placeholders */
+body.dark-mode .chartPlaceholder,
+.dark-mode .chartPlaceholder,
+body.dark-mode .mapPlaceholder,
+.dark-mode .mapPlaceholder {
+  background: #374151 !important;
+  color: #9ca3af !important;
+}
+
+/* Dark mode for status indicators */
+body.dark-mode .safe {
+  border-left-color: #2F855A !important;
+  background: #1a202c !important;
+}
+
+body.dark-mode .warning {
+  border-left-color: #eab308 !important;
+  background: #1a202c !important;
+}
+
+body.dark-mode .danger {
+  border-left-color: #e53e3e !important;
+  background: #1a202c !important;
+}
+
+/* Dark mode for vision cards */
+body.dark-mode .visionCard,
+.dark-mode .visionCard {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 4px 16px #0006 !important;
+}
+
+body.dark-mode .visionCard:hover,
+.dark-mode .visionCard:hover {
+  box-shadow: 0 8px 32px #0008 !important;
+}
+
+/* Dark mode for team cards */
+body.dark-mode .teamCard,
+.dark-mode .teamCard {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 4px 16px #0006 !important;
+}
+
+body.dark-mode .teamCard:hover,
+.dark-mode .teamCard:hover {
+  box-shadow: 0 8px 32px #0008 !important;
+}
+
+/* Dark mode for feature items */
+body.dark-mode .featureItem,
+.dark-mode .featureItem {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 2px 8px #0006 !important;
+}
+
+body.dark-mode .featureItem:hover,
+.dark-mode .featureItem:hover {
+  box-shadow: 0 4px 16px #0008 !important;
+}
+
+/* Dark mode for process steps */
+body.dark-mode .processStep,
+.dark-mode .processStep {
+  background: #2d3748 !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 2px 8px #0006 !important;
+}
+
+/* Dark mode for CTA section */
+body.dark-mode .ctaSection,
+.dark-mode .ctaSection {
+  background: linear-gradient(135deg, #1A365D 0%, #2F855A 100%) !important;
+  color: white !important;
+}
+
+body.dark-mode .ctaButton,
+.dark-mode .ctaButton {
+  background: white !important;
+  color: #2F855A !important;
+}
+
+body.dark-mode .ctaButtonSecondary,
+.dark-mode .ctaButtonSecondary {
+  background: transparent !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+body.dark-mode .ctaButtonSecondary:hover,
+.dark-mode .ctaButtonSecondary:hover {
+  background: white !important;
+  color: #2F855A !important;
+}
+
+/* Dark mode for alerts */
+body.dark-mode .alertItem,
+.dark-mode .alertItem {
+  border-bottom-color: #374151 !important;
+}
+
+body.dark-mode .alertTime,
+.dark-mode .alertTime {
+  color: #9ca3af !important;
+}
+
+/* Dark mode for pulse dot */
+body.dark-mode .pulseDot,
+.dark-mode .pulseDot {
+  background: #2F855A !important;
+}
+
+/* Dark mode for theme controls */
+body.dark-mode .themeBtn,
+.dark-mode .themeBtn {
+  background: #2d3748 !important;
+  color: #FFD600 !important;
+  border-color: #63B3ED !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3) !important;
+  animation: bulbPulse 2s ease-in-out infinite;
+}
+
+body.dark-mode .themeBtn:hover,
+.dark-mode .themeBtn:hover {
+  background: #374151 !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5) !important;
+  transform: scale(1.1) !important;
+  animation: none;
+}
+
+@keyframes bulbPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+body.dark-mode .fontSizeIndicator,
+.dark-mode .fontSizeIndicator {
+  color: #e2e8f0 !important;
+}
+
+/* Dark mode for footer */
+body.dark-mode .footer,
+.dark-mode .footer {
+  background: #1a202c !important;
+  color: #e2e8f0 !important;
+}
+
+/* Dark mode for loading states */
+body.dark-mode .loading,
+.dark-mode .loading {
+  color: #e2e8f0 !important;
+}
+
+/* Dark mode for error states */
+body.dark-mode .error,
+.dark-mode .error {
+  color: #f56565 !important;
+}
+
+/* Dark mode for success states */
+body.dark-mode .success,
+.dark-mode .success {
+  color: #48bb78 !important;
+}
+
+/* Dark mode for info states */
+body.dark-mode .info,
+.dark-mode .info {
+  color: #63B3ED !important;
+}
+
+/* Dark mode for warning states */
+body.dark-mode .warning,
+.dark-mode .warning {
+  color: #eab308 !important;
+}
+
+/* Global Font Size System - Enhanced */
+/* Small Font Size */
+body.font-size-small {
+  font-size: 14px !important;
+}
+
+body.font-size-small * {
+  font-size: inherit !important;
+}
+
+body.font-size-small h1,
+.font-size-small h1 {
+  font-size: 1.8rem !important;
+}
+
+body.font-size-small h2,
+.font-size-small h2 {
+  font-size: 1.5rem !important;
+}
+
+body.font-size-small h3,
+.font-size-small h3 {
+  font-size: 1.2rem !important;
+}
+
+body.font-size-small p,
+.font-size-small p {
+  font-size: 0.9rem !important;
+}
+
+body.font-size-small button,
+.font-size-small button {
+  font-size: 0.85rem !important;
+  padding: 0.6rem 1.2rem !important;
+}
+
+body.font-size-small input,
+.font-size-small input,
+body.font-size-small select,
+.font-size-small select {
+  font-size: 0.85rem !important;
+  padding: 0.5rem 0.8rem !important;
+}
+
+body.font-size-small .sensorValue {
+  font-size: 1.6em !important;
+}
+
+body.font-size-small .sensorLabel {
+  font-size: 1rem !important;
+}
+
+body.font-size-small .sectionTitle {
+  font-size: 1.3rem !important;
+}
+
+body.font-size-small .title {
+  font-size: 1.8rem !important;
+}
+
+body.font-size-small .introText {
+  font-size: 1rem !important;
+}
+
+body.font-size-small .chartTitle {
+  font-size: 1.2rem !important;
+}
+
+body.font-size-small .controlBtn {
+  font-size: 0.9rem !important;
+  padding: 0.7rem 1.8rem !important;
+}
+
+body.font-size-small .quickBtn {
+  font-size: 0.85rem !important;
+  padding: 0.6rem 1.2rem !important;
+}
+
+/* Medium Font Size (Default) */
+body.font-size-medium {
+  font-size: 16px !important;
+}
+
+body.font-size-medium * {
+  font-size: inherit !important;
+}
+
+body.font-size-medium h1,
+.font-size-medium h1 {
+  font-size: 2rem !important;
+}
+
+body.font-size-medium h2,
+.font-size-medium h2 {
+  font-size: 1.7rem !important;
+}
+
+body.font-size-medium h3,
+.font-size-medium h3 {
+  font-size: 1.4rem !important;
+}
+
+body.font-size-medium p,
+.font-size-medium p {
+  font-size: 1rem !important;
+}
+
+body.font-size-medium button,
+.font-size-medium button {
+  font-size: 1rem !important;
+  padding: 0.8rem 1.5rem !important;
+}
+
+body.font-size-medium input,
+.font-size-medium input,
+body.font-size-medium select,
+.font-size-medium select {
+  font-size: 1rem !important;
+  padding: 0.6rem 1rem !important;
+}
+
+body.font-size-medium .sensorValue {
+  font-size: 2em !important;
+}
+
+body.font-size-medium .sensorLabel {
+  font-size: 1.1rem !important;
+}
+
+body.font-size-medium .sectionTitle {
+  font-size: 1.4rem !important;
+}
+
+body.font-size-medium .title {
+  font-size: 2rem !important;
+}
+
+body.font-size-medium .introText {
+  font-size: 1.15rem !important;
+}
+
+body.font-size-medium .chartTitle {
+  font-size: 1.3rem !important;
+}
+
+body.font-size-medium .controlBtn {
+  font-size: 1rem !important;
+  padding: 0.8rem 2rem !important;
+}
+
+body.font-size-medium .quickBtn {
+  font-size: 1rem !important;
+  padding: 0.8rem 1.5rem !important;
+}
+
+/* Large Font Size */
+body.font-size-large {
+  font-size: 18px !important;
+}
+
+body.font-size-large * {
+  font-size: inherit !important;
+}
+
+body.font-size-large h1,
+.font-size-large h1 {
+  font-size: 2.2rem !important;
+}
+
+body.font-size-large h2,
+.font-size-large h2 {
+  font-size: 1.9rem !important;
+}
+
+body.font-size-large h3,
+.font-size-large h3 {
+  font-size: 1.6rem !important;
+}
+
+body.font-size-large p,
+.font-size-large p {
+  font-size: 1.1rem !important;
+}
+
+body.font-size-large button,
+.font-size-large button {
+  font-size: 1.1rem !important;
+  padding: 0.9rem 1.8rem !important;
+}
+
+body.font-size-large input,
+.font-size-large input,
+body.font-size-large select,
+.font-size-large select {
+  font-size: 1.1rem !important;
+  padding: 0.7rem 1.2rem !important;
+}
+
+body.font-size-large .sensorValue {
+  font-size: 2.2em !important;
+}
+
+body.font-size-large .sensorLabel {
+  font-size: 1.2rem !important;
+}
+
+body.font-size-large .sectionTitle {
+  font-size: 1.5rem !important;
+}
+
+body.font-size-large .title {
+  font-size: 2.2rem !important;
+}
+
+body.font-size-large .introText {
+  font-size: 1.25rem !important;
+}
+
+body.font-size-large .chartTitle {
+  font-size: 1.4rem !important;
+}
+
+body.font-size-large .controlBtn {
+  font-size: 1.1rem !important;
+  padding: 0.9rem 2.2rem !important;
+}
+
+body.font-size-large .quickBtn {
+  font-size: 1.1rem !important;
+  padding: 0.9rem 1.8rem !important;
+}
+
+/* Extra Large Font Size for accessibility */
+body.font-size-extra-large {
+  font-size: 20px !important;
+}
+
+body.font-size-extra-large * {
+  font-size: inherit !important;
+}
+
+body.font-size-extra-large h1,
+.font-size-extra-large h1 {
+  font-size: 2.5rem !important;
+}
+
+body.font-size-extra-large h2,
+.font-size-extra-large h2 {
+  font-size: 2.1rem !important;
+}
+
+body.font-size-extra-large h3,
+.font-size-extra-large h3 {
+  font-size: 1.8rem !important;
+}
+
+body.font-size-extra-large p,
+.font-size-extra-large p {
+  font-size: 1.2rem !important;
+}
+
+body.font-size-extra-large button,
+.font-size-extra-large button {
+  font-size: 1.2rem !important;
+  padding: 1rem 2rem !important;
+}
+
+body.font-size-extra-large input,
+.font-size-extra-large input,
+body.font-size-extra-large select,
+.font-size-extra-large select {
+  font-size: 1.2rem !important;
+  padding: 0.8rem 1.4rem !important;
+}
+
+body.font-size-extra-large .sensorValue {
+  font-size: 2.4em !important;
+}
+
+body.font-size-extra-large .sensorLabel {
+  font-size: 1.3rem !important;
+}
+
+body.font-size-extra-large .sectionTitle {
+  font-size: 1.6rem !important;
+}
+
+body.font-size-extra-large .title {
+  font-size: 2.5rem !important;
+}
+
+body.font-size-extra-large .introText {
+  font-size: 1.35rem !important;
+}
+
+body.font-size-extra-large .chartTitle {
+  font-size: 1.5rem !important;
+}
+
+body.font-size-extra-large .controlBtn {
+  font-size: 1.2rem !important;
+  padding: 1rem 2.5rem !important;
+}
+
+body.font-size-extra-large .quickBtn {
+  font-size: 1.2rem !important;
+  padding: 1rem 2rem !important;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  body.font-size-small {
+    font-size: 13px !important;
+  }
+  
+  body.font-size-medium {
+    font-size: 15px !important;
+  }
+  
+  body.font-size-large {
+    font-size: 17px !important;
+  }
+  
+  body.font-size-extra-large {
+    font-size: 19px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body.font-size-small {
+    font-size: 12px !important;
+  }
+  
+  body.font-size-medium {
+    font-size: 14px !important;
+  }
+  
+  body.font-size-large {
+    font-size: 16px !important;
+  }
+  
+  body.font-size-extra-large {
+    font-size: 18px !important;
+  }
+} 

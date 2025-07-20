@@ -1,0 +1,635 @@
+.aboutBg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.aboutBg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.25); /* subtle white overlay for clarity */
+  z-index: 1;
+}
+
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.85); /* semi-transparent background for readability */
+  border-radius: 1.5rem;
+}
+
+.introSection, .whySection, .visionSection, .howSection, .teamSection, .differentSection, .techSection, .ctaSection {
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 16px #2F855A18;
+  padding: 1.2rem 0.7rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introSection {
+  background: linear-gradient(120deg, #e6f4fa 60%, #fff 100%);
+}
+
+.introHeader {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px #2F855A22;
+  border: 3px solid #fff;
+}
+
+.introContent {
+  flex: 1;
+}
+
+.title {
+  color: #1A365D;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.introText {
+  color: #1A365D;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.introImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px #2F855A22;
+}
+
+.flagImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(47, 133, 90, 0.8));
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  color: #2F855A;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.whyContent {
+  margin-bottom: 2rem;
+}
+
+.whyStats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #2F855A 0%, #63B3ED 100%);
+  border-radius: 1rem;
+  color: white;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.statText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.whyList {
+  color: #1A365D;
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.waterImageContainer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px #63B3ED22;
+}
+
+.waterImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.waterOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(99, 179, 237, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.visionSection {
+  display: flex;
+  gap: 2rem;
+  background: linear-gradient(120deg, #e6f4fa 60%, #fff 100%);
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.visionCard {
+  background: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 16px #63B3ED22;
+  padding: 1rem 0.7rem;
+  min-width: 100px;
+  max-width: 180px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px #63B3ED33;
+}
+
+.visionIcon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.visionTitle {
+  color: #2F855A;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.visionText {
+  color: #1A365D;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.howSection {
+  background: #f7fafc;
+}
+.howSteps {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.howStep {
+  background: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px #2F855A11;
+  padding: 1rem 0.7rem;
+  min-width: 100px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+.howStep:hover {
+  transform: translateY(-2px);
+}
+.howIcon {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.howText {
+  color: #1A365D;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.processVisual {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7fafc 0%, #e6f4fa 100%);
+  border-radius: 1rem;
+}
+
+.processLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.processStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 8px #2F855A11;
+  min-width: 80px;
+}
+
+.processIcon {
+  font-size: 1.5rem;
+}
+
+.processArrow {
+  font-size: 1.5rem;
+  color: #2F855A;
+  font-weight: bold;
+}
+
+.teamSection {
+  background: linear-gradient(120deg, #fff 60%, #e6f4fa 100%);
+}
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.teamCard {
+  background: #e6f4fa;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 16px #63B3ED22;
+  padding: 1rem 0.7rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  animation: fadeInUp 0.7s cubic-bezier(.23,1.01,.32,1) both;
+}
+.teamCard:hover {
+  box-shadow: 0 6px 32px #2F855A44;
+  transform: translateY(-4px) scale(1.04);
+}
+.teamAvatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2F855A 60%, #63B3ED 100%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px #2F855A22;
+}
+.teamName {
+  color: #1A365D;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+.teamRole {
+  color: #2F855A;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.teamBio {
+  color: #1A365D;
+  font-size: 0.97rem;
+  text-align: center;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+
+.differentSection {
+  background: #f7fafc;
+}
+.featuresList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px #2F855A11;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.featureItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 16px #2F855A22;
+}
+.featureIcon {
+  font-size: 1.5rem;
+  min-width: 2rem;
+  text-align: center;
+}
+.featureText {
+  color: #1A365D;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #2F855A 0%, #63B3ED 100%);
+  color: white;
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  background: white;
+  color: #2F855A;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+
+.ctaButtonSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButtonSecondary:hover {
+  background: white;
+  color: #2F855A;
+  transform: translateY(-2px);
+}
+
+.aboutModern {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px #2F855A22;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  max-width: 900px;
+  margin: 2.5rem auto 2.5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.aboutImgModern {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #2F855A33;
+  background: #f7fafc;
+}
+
+.aboutTextModern {
+  max-width: 600px;
+}
+
+.aboutTextModern h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #2F855A;
+  text-shadow: 0 2px 12px #63B3ED33, 0 1px 4px #1A365D99;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.aboutTextModern p {
+  color: #1A365D;
+  font-size: 1.15rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #e6fffa 60%, #63B3ED11 100%);
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  margin: 0 auto 0.5rem auto;
+  max-width: 600px;
+  box-shadow: 0 2px 8px #2F855A22;
+  text-shadow: 0 1px 4px #63B3ED44;
+}
+
+@media (max-width: 1200px) {
+  .introSection, .whySection, .visionSection, .howSection, .teamSection, .differentSection, .techSection, .ctaSection {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .about { padding: 1.2rem 0.5rem 2rem 0.5rem; }
+  .introSection, .whySection, .visionSection, .howSection, .teamSection, .differentSection, .techSection, .ctaSection {
+    padding: 0.7rem 0.3rem;
+    max-width: 98vw;
+  }
+  .visionSection { flex-direction: column; gap: 1.2rem; }
+  .introHeader { flex-direction: column; text-align: center; }
+  .title { text-align: center; }
+  .introText { text-align: center; }
+  .processLine { flex-direction: column; gap: 1rem; }
+  .processArrow { transform: rotate(90deg); }
+  .aboutModern {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .visionCard, .howStep, .teamCard, .featureItem, .techCard {
+    min-width: 80px;
+    max-width: 98vw;
+    padding: 0.7rem 0.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .about { padding: 0.5rem 0.2rem 1.2rem 0.2rem; }
+  .introSection, .whySection, .visionSection, .howSection, .teamSection, .differentSection, .ctaSection { padding: 1.2rem 0.5rem; }
+  .teamCard { width: 90vw; }
+  .howSteps, .featuresList { flex-direction: column; gap: 0.7rem; }
+  .ctaButtons { flex-direction: column; align-items: center; }
+  .logo { width: 36px; height: 36px; }
+  .statNumber { font-size: 2rem; }
+  .statText { font-size: 1rem; }
+  .whyStats { flex-direction: column; text-align: center; }
+  .aboutTextModern h2 {
+    font-size: 1.5rem;
+  }
+  .aboutTextModern p {
+    font-size: 1rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  .flagImage, .waterImage {
+    height: 60px;
+  }
+}
+
+/* Technology Section Styles */
+.techSection {
+  background: linear-gradient(120deg, #e6f4fa 60%, #fff 100%);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.techCard {
+  background: #fff;
+  border-radius: 0.7rem;
+  padding: 1rem 0.7rem;
+  box-shadow: 0 2px 16px #63B3ED22;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #2F855A;
+}
+
+.techCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px #63B3ED33;
+}
+
+.techCard h3 {
+  color: #1A365D;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.techCard p {
+  color: #1A365D;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .techGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .techCard {
+    padding: 1.2rem;
+  }
+} 

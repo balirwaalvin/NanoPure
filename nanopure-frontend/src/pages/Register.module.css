@@ -1,0 +1,114 @@
+.registerBg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7fafc55 0%, #63B3ED55 70%, #2F855A55 100%), url('../assets/login.webp') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.dots {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.12;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border: 2.5px solid #facc15;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px #2F855A22;
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.title {
+  color: #facc15;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.error {
+  color: #e53e3e;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.label {
+  color: #2F855A;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1.5px solid #63B3ED;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  background: #f7fafc;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #2F855A;
+}
+.btn {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #facc15 0%, #63B3ED 60%, #2F855A 100%);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #1A365D22;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #facc15 0%, #2F855A 100%);
+  transform: scale(1.04);
+}
+.linkRow {
+  margin-top: 1.2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.98rem;
+}
+.link {
+  color: #63B3ED;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #2F855A;
+}
+@media (max-width: 600px) {
+  .card { padding: 1.2rem 0.5rem; }
+} 

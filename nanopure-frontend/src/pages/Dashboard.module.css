@@ -1,0 +1,359 @@
+.dashboardBg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.dashboardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+.dashboard {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px #2F855A33;
+  padding: 2.5rem 2rem;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.sensorCardRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sensorCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #2F855A22;
+  padding: 2rem 1.5rem;
+  min-width: 180px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.sensorCard:hover {
+  box-shadow: 0 8px 32px #2F855A44;
+  transform: translateY(-4px) scale(1.04);
+}
+.safe {
+  border-left: 8px solid #2F855A;
+  background: #e6f4ea;
+}
+.warning {
+  border-left: 8px solid #eab308;
+  background: #fef9c3;
+}
+.danger {
+  border-left: 8px solid #e53e3e;
+  background: #fee2e2;
+}
+.sensorLabel {
+  color: #1A365D;
+  font-weight: bold;
+}
+.sensorValue {
+  color: #2F855A;
+  font-weight: 800;
+}
+.sensorUnit {
+  color: #1A365D;
+  font-weight: 500;
+}
+.sensorStatus {
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.notificationBtn {
+  background: #eab308;
+  color: #1A365D;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notificationBtn:hover {
+  background: #f59e0b;
+  transform: scale(1.05);
+}
+
+.notificationBtn:active {
+  transform: scale(0.95);
+}
+
+.heavyMetalsList {
+  color: #1A365D;
+  margin-top: 0.2rem;
+}
+.chartsRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.chartCard {
+  background: #e6f4fa;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px #63B3ED22;
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 350px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.chartTitle {
+  color: #1A365D;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.chartPlaceholder {
+  width: 100%;
+  height: 120px;
+  background: #f7fafc;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-style: italic;
+}
+.controlPanel {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.controlBtn {
+  background: #2F855A;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #1A365D22;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.controlBtn:hover {
+  background: #1A365D;
+  transform: scale(1.04);
+}
+.thresholdsCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #2F855A22;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
+.linkBtn {
+  background: none;
+  color: #2F855A;
+  border: none;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.linkBtn:hover {
+  color: #1A365D;
+}
+.statusPanel {
+  background: #f7fafc;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #63B3ED22;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: left;
+}
+.alertCenter {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #eab30822;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: left;
+}
+.alertItem {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.alertTime {
+  color: #666;
+  font-size: 0.9em;
+}
+.ackBtn {
+  background: #2F855A;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s;
+}
+.ackBtn:hover {
+  background: #1A365D;
+}
+.mapCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #63B3ED22;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
+.mapPlaceholder {
+  width: 100%;
+  height: 120px;
+  background: #f7fafc;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-style: italic;
+  margin-top: 1rem;
+}
+.quickAccessRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.quickBtn {
+  background: #63B3ED;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #63B3ED22;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.quickBtn:hover {
+  background: #2F855A;
+  transform: scale(1.04);
+}
+
+.pdfBtn {
+  background: linear-gradient(135deg, #2F855A 0%, #1A365D 100%);
+  border: 2px solid #2F855A;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdfBtn:hover {
+  background: linear-gradient(135deg, #1A365D 0%, #2F855A 100%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px #2F855A44;
+}
+
+.pdfBtn:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.pdfBtn:disabled:hover {
+  background: #ccc;
+  transform: none;
+}
+.advancedPanel {
+  background: #f7fafc;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #63B3ED22;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: left;
+}
+.aiStatus {
+  color: #2F855A;
+  font-weight: bold;
+}
+.sectionTitle {
+  color: #2F855A;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.liveGraphCard {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #2F855A22;
+  padding: 1.5rem 1.2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .liveGraphCard {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    padding: 1.2rem 0.5rem;
+    margin: 1.2rem auto;
+  }
+  .sensorCardRow, .chartsRow, .quickAccessRow, .controlPanel {
+    gap: 1rem;
+  }
+  .sensorCard, .chartCard, .thresholdsCard, .statusPanel, .alertCenter, .mapCard, .advancedPanel {
+    max-width: 90vw;
+  }
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  background: #2F855A;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+} 

@@ -1,0 +1,175 @@
+.settingsBg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #63B3ED 0%, #2F855A 100%), url('/assets/about.webp') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.settings {
+  min-height: unset;
+  background: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  color: #1A365D;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.sectionsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.section {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #2F855A22;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 0;
+  margin-bottom: 0.5rem;
+}
+.sectionTitle {
+  color: #2F855A;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.inputSmall {
+  padding: 0.5rem 0.8rem;
+  border: 1.5px solid #63B3ED;
+  border-radius: 0.7rem;
+  font-size: 1em;
+  background: #f7fafc;
+  outline: none;
+  min-width: 70px;
+  max-width: 120px;
+  transition: border 0.2s;
+}
+.inputSmall:focus {
+  border: 1.5px solid #2F855A;
+}
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1em;
+  color: #1A365D;
+  background: #e6f4fa;
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  margin-bottom: 0.2rem;
+  transition: background 0.2s;
+}
+.radioLabel input[type="radio"] {
+  accent-color: #2F855A;
+}
+.btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: #2F855A;
+  box-shadow: 0 2px 8px #1A365D22;
+  transition: background 0.2s, transform 0.2s;
+  margin-right: 0.5rem;
+}
+.btn:hover {
+  background: #1A365D;
+  transform: translateY(-2px) scale(1.03);
+}
+.removeBtn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.95rem;
+  margin-left: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.removeBtn:hover {
+  background: #b91c1c;
+}
+.teamList {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.teamMember {
+  background: #e6f4fa;
+  border-radius: 0.7rem;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  color: #1A365D;
+}
+.role {
+  color: #2F855A;
+  font-weight: 600;
+  margin-left: 0.7rem;
+}
+.sensorList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.sensorItem {
+  background: #f0f9f6;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1em;
+  color: #1A365D;
+  box-shadow: 0 1px 4px #2F855A11;
+}
+.sensorStatus {
+  color: #2F855A;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+.lastSync {
+  color: #1A365D;
+  font-size: 0.97rem;
+  margin-left: 0.7rem;
+}
+@media (max-width: 900px) {
+  .sectionsGrid {
+    gap: 1.5rem;
+  }
+  .settings {
+    padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+  }
+} 
