@@ -53,6 +53,8 @@ nanopure-app/
 - Node.js 18 or later
 - MySQL 8.0 or later
 - Git
+- Azure account (for deployment)
+- GitHub account (for deployment)
 
 ### Local Development Setup
 
@@ -95,6 +97,14 @@ nanopure-app/
    This will start:
    - Backend API at `http://localhost:3001`
    - Frontend at `http://localhost:3000`
+
+## 📤 Deployment to Azure via GitHub
+
+For a complete deployment to Microsoft Azure using GitHub Actions:
+
+1. **Set up GitHub repository**: Follow the [GitHub Setup Guide](./GITHUB_SETUP.md)
+2. **Deploy to Azure**: Follow the [Azure Deployment Guide](./AZURE_DEPLOYMENT.md)
+3. **Use the checklist**: Reference the [Deployment Checklist](./DEPLOYMENT_CHECKLIST.md)
 
 ## 🛠️ Available Scripts
 
